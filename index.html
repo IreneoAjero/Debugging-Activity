@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Debugging Activity</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles.css"> <!--wrong spelling-->
 </head>
 <body>
     <header>
@@ -12,17 +12,17 @@
     </header>
     <nav>
         <ul style="color: brown;">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</li>
+            <li><a href="#">Home</a></li> 
+            <li><a href="#">About</a></li> <!--the <a> tag was not closed--> 
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
     <main>
         <section>
-            <h2>About Us
+            <h2>About Us</h2> <!--the </h2> tag was missing before the paragraph starts-->
             <p>Welcome to our website. We provide top-notch services in various fields.</p>
-        </section>
+        </section> <!--missing closing section-->
         <section>
             <h2>Our Services</h2>
             <ul>
@@ -40,7 +40,7 @@
                 <input type="email" id="email" name="email">
                 <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message here"></textarea>
                 <button type="submit">Send</button>
-            
+            </form> <!--form tag was not closed -->
         </section>
     </main>
     <footer>
